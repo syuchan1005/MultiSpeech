@@ -15,8 +15,12 @@ public class DocomoSpeech implements Speech {
 	private static AudioPlayer audioPlayer;
 
 	public DocomoSpeech(String apiKey) throws LineUnavailableException {
+		this(apiKey, new InlineAudioPlayer());
+	}
+
+	public DocomoSpeech(String apiKey, AudioPlayer audioPlayer) {
 		AuthApiKey.initializeAuth(apiKey);
-		audioPlayer = new AudioPlayer();
+		this.audioPlayer = audioPlayer;
 	}
 
 	@Override

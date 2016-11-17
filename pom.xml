@@ -21,7 +21,6 @@
     </build>
 
     <dependencies>
-        <!-- Docomo -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
@@ -62,6 +61,7 @@
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
+        <!-- Docomo -->
         <dependency>
             <groupId>jp.ne.docomo</groupId>
             <artifactId>docomoAItalk</artifactId>
@@ -75,6 +75,12 @@
             <version>1.0.6</version>
             <scope>system</scope>
             <systemPath>${basedir}/lib/docomo-common-java-sdk-1.0.6.jar</systemPath>
+        </dependency>
+        <!-- Google -->
+        <dependency>
+            <groupId>com.googlecode.soundlibs</groupId>
+            <artifactId>mp3spi</artifactId>
+            <version>1.9.5.4</version>
         </dependency>
     </dependencies>
 
